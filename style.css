@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --cyan-hover: hsla(178, 100%, 50%, 0.342);
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --font: 'Outfit', sans-serif;
+}
+
+p {
+  font-size: 18px;
+  color: var(--soft-blue);
+  font-weight: 300;
+}
+
+body {
+  background-color: var(--main-bg);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.margin-bottom {
+  margin-bottom: 15px;
+}
+
+.cyan {
+  color: var(--cyan);
+}
+
+.card-container {
+  background-color: var(--card-bg);
+  width: 330px;
+  padding: 18px;
+  border-radius: 15px;
+}
+
+.equilibrium-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.icon-img {
+  width: 10px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-icon-container > p {
+  display: inline-block;
+}
+
+h1 {
+  font-size: 20px;
+  color: var(--white);
+  font-family: var(--font);
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+h1:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--line);
+}
+
+.avatar-img {
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+span {
+  color: var(--white);
+  font-weight: 400;
+  transition: all 0.3s;
+}
+
+span:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.cyan-background {
+  display: none;
+  height: 100%;
+  width: 100%;
+  background-color: var(--cyan-hover);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-container:hover .cyan-background {
+  display: flex;
+}
